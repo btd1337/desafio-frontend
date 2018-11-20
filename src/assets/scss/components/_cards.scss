@@ -1,1 +1,26 @@
+.card {
+	border-radius: $border-radius-primary;
+	box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+	color: $color-white;
+	font-size: 2rem;
+	width: 100%;
 
+	background: {
+		color: $color-secondary;
+	}
+
+	&__header {
+		color: $color-quaternary;
+		padding: 0 0.5rem;
+		text-align: left;
+
+		&__title {
+			display: inline-block;
+			font-size: 1.8rem;
+		}
+
+		&__button {
+			float: right;
+		}
+	}
+}

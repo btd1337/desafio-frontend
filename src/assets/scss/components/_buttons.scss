@@ -1,1 +1,20 @@
+.btn {
+	border: unset;
+	border-radius: $border-radius-primary;
+	padding: 1rem;
+	text-transform: uppercase;
 
+	&--primary {
+		@extend %primary-color-combination;
+		box-shadow: 0 0 10px 0 rgba($color-shadow-primary, 0.5);
+
+		&:hover {
+			background-color: darken($color-primary, 10%);
+		}
+
+		&--rounded {
+			border-radius: $border-radius-secondary;
+			box-shadow: unset;
+		}
+	}
+}

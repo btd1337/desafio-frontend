@@ -1,0 +1,55 @@
+.login {
+	height: 100vh;
+
+	background: {
+		color: $color-background-primary;
+		image: linear-gradient(to right bottom,
+			rgba($color-shadow-primary, 0.5),
+			rgba(darken($color-shadow-primary, 10%), 0.5)),
+			url('/../assets/img/background.jpg');
+		size: cover;
+	}
+}
+
+.login-form {
+	color: $color-white;
+	margin: 0 auto;
+	padding: 1.8rem;
+	text-align: center;
+	width: 25%;
+
+	@include media('<=tablet') {
+		width: 100%;
+	}
+
+	&::before {
+		content: '';
+		display: block;
+		height: 10vh;
+		min-height: 5rem;
+
+		background: {
+			image: url('/../assets/img/logo_big.png');
+			position: center;
+			repeat: no-repeat;
+		}
+
+		padding: {
+			bottom: 10%;
+			top: 10%;
+		}
+	}
+
+	button,
+	input {
+		display: block;
+		min-width: 20rem;
+		width: 100%;
+
+		margin: {
+			bottom: 1.25rem;
+			left: auto;
+			right: auto;
+		}
+	}
+}

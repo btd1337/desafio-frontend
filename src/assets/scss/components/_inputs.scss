@@ -1,0 +1,14 @@
+input {
+	&[type=text] {
+		background: transparent;
+		border: 1px solid $color-white;
+		border-radius: $border-radius-primary;
+		color: $color-white;
+		padding: 1rem;
+
+		@include placeholder {
+			color: $color-white;
+			font-weight: 600;
+		}
+	}
+}
